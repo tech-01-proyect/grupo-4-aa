@@ -12,59 +12,75 @@ Code, Compile, Run and Debug online from anywhere in world.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Web</title>
+    <title>Página Vintage</title>
     <style>
+        /* Fondo vintage con gradiente */
         body {
-            background-color: green; 
-            color: white; 
-            font-family: Arial, salgerian Fuente */
+            background: linear-gradient(to right, #f1c2b6, #e3b7a0, #c7b59b, #b3a38d);
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            height: 100vh; 
+            height: 100vh;
             display: flex;
+            align-items: center;
+          
             flex-direction: column;
-        
-            align-items: center; 
-            text-align: center;
+            
+            color: #4b4b4b;
         }
+
+        /* Estilo del título */
         h1 {
+            font-size: 3em;
+            color: #d88f65;
             margin-bottom: 20px;
         }
+
+        /* Estilo de la imagen */
         img {
-            max-width: 100%; 
+            max-width: 80%;
             height: auto;
-            border: 3px solid white; /
-            margin-bottom: ;25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* Contenedor de los botones en 2 columnas y 2 filas */
         .button-container {
             display: grid;
-         grid-template-columns: repeat(2, 1fr); 
-            gap: 50px;
+            grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+            grid-template-rows: repeat(2, 1fr); /* 2 filas */
+         gap: 45px;
+            max-width: 600px;
             width: 100%;
-            max-width: 600px
         }
-        button {
-            padding: 15px;
-            font-size: 25px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: #4CAF50;
+
+        /* Estilo de los botones */
+        .button-container button {
+            text-decoration: none;
+            background-color: #d88f65;
             color: white;
-            transition: background-color 0.3s ease;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            text-align: center;
+            transition: background-color 0.3s;
+            display: block;
         }
-        button:hover {
-            background-color: #45a049;
+
+        /* Efecto hover para los botones */
+        .button-container button:hover {
+            background-color: #c47b4a;
         }
+
     </style>
 </head>
 <body>
-
     <h1>CHEMSPHERE</h1>
-    <img src="Logo.png" width=50  height=30">
+    <img src="logo.png">
     
     <div class="button-container">
-        <button onclick="window.location.href='https://www.google.com'">FISICA</button>
+         <button onclick="window.location.href='https://www.google.com'">FISICA</button>
         <button onclick="window.location.href='https://forms.gle/1fCNjcRzGR8SsJbw6'">ESTADISTICA</button>
         <button onclick="window.location.href='https://www.twitter.com'">QUIMICA Y BIOLOGIA</button>
         <button onclick="window.location.href='https://www.github.com'">EXPRESION ARTISTICA</button>
@@ -73,6 +89,5 @@ Code, Compile, Run and Debug online from anywhere in world.
         <button onclick="window.location.href='https://www.twitter.com'">COMPUTACION</button>
         <button onclick="window.location.href='https://www.github.com'">INGLES</button>
     </div>
-
 </body>
 </html>
